@@ -1,0 +1,37 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	double sales[10];
+	int index;
+	double largestsale, sum, average;
+
+
+		for (index = 0; index < 10; index++)
+		sales[index] = 0.0;
+
+		for (index = 0; index < 10; index++)
+		cin >> sales[index];
+	
+		for (index = 0; index < 10; index++)
+		cout<< sales[index] <<"  ";
+
+		sum = 0;
+		for (index = 0; index < 10; index++)
+		sum = sum + sales[index];
+
+		average = sum / 10;
+
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+
+		cout << " the sum is " << sum << " and the average is " << average;
+
+
+_getch();
+return 0;
+}
